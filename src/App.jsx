@@ -10,8 +10,7 @@ function App(props) {
   }
   return <>
   <Hello person={person}/>
-  </>;
+  </>
 }
 
 export default App;
- 9
