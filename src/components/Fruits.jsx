@@ -1,3 +1,4 @@
+import Fruit from "./Fruit";
 function Fruits() {
   // const fruits = ["Apple ", "Mango ", "Banana ", " Orange ", "Pineapple"];
   const fruits = [
@@ -5,16 +6,19 @@ function Fruits() {
     { name: "Mango", price: 12, emoji: "🥭" },
     { name: "Banana", price: 14, emoji: "🍌" },
     { name: "Orange", price: 16, emoji: "🍊" },
-    { name: "Pineaaple", price: 18, emoji: "🍎" },
+    { name: "Pineaaple", price: 18, emoji: "🥭" },
   ];
 
   return (
     <div className="fruits">
       <ul>
         {fruits.map((fruit) => (
-          <li key={fruit.name}>
-            {fruit.emoji} {fruit.name} {fruit.price}
-          </li>
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            emoji={fruit.emoji}
+          />
         ))}
       </ul>
     </div>
