@@ -12,7 +12,7 @@ function App(props) {
   return (
     <>
       <Hello person={person} />
-      <Fruits className="fruits" />
+      <Fruits />
     </>
   );
 }
