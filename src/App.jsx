@@ -3,6 +3,7 @@ import Hello from "./components/Hello";
 import Fruits from "./components/Fruits";
 import ConditionalComponent from "./components/ConditionalComponent";
 import Message from "./components/Message";
+import Counter from "./components/Counter";
 function App(props) {
   const seatNumbers = [1, 4, 7];
   const person = {
@@ -13,10 +14,11 @@ function App(props) {
   };
   return (
     <>
-      <Hello person={person} />
-      <Fruits />
-      <ConditionalComponent />
-      <Message />
+      {/* <Hello person={person} /> */}
+      {/* <Fruits /> */}
+      {/* <ConditionalComponent /> */}
+      {/* <Message /> */}
+      <Counter />
     </>
   );
 }
